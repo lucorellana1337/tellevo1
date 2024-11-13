@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeLlevo - Transporte para Estudiantes de Duoc</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Barra de navegación de pestañas -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="inicio-tab" data-toggle="tab" href="#inicio" role="tab">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="caracteristicas-tab" data-toggle="tab" href="#caracteristicas" role="tab">Características</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contacto-tab" data-toggle="tab" href="#contacto" role="tab">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="descargar-tab" data-toggle="tab" href="#descargar" role="tab">Descargar</a>
+            </li>
+        </ul>
+
+        <!-- Contenido de las pestañas -->
+        <div class="tab-content mt-4">
+            <!-- Sección Inicio -->
+            <div class="tab-pane fade show active" id="inicio" role="tabpanel">
+                <div>
+                    <h1 class="display-4 text-left">TeLlevo</h1>
+                    <p class="lead">La app de transporte para estudiantes de Duoc UC</p>
+                    <img src="e75673c1a8a6d7156bebc0c8ac7d836b.png" alt="Logo de Tellevo" class="img-fluid my-3" style="max-width: 200px;">
+                    <p>Encuentra opciones de transporte, comparte rutas y llega a tu campus de manera fácil y segura.</p>
+                </div>
+            </div>
+
+            <!-- Sección Características -->
+            <div class="tab-pane fade" id="caracteristicas" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="text-primary">Geolocalización</h3>
+                        <p>Usa tu ubicación actual para encontrar rutas y transporte cercanos, optimizando tu tiempo de viaje.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="text-primary">Preferencias Guardadas</h3>
+                        <p>Personaliza tu experiencia y guarda tus preferencias de transporte en la app para un acceso rápido.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="text-primary">Filtrado de Opciones</h3>
+                        <p>Filtra rutas y opciones de transporte según tus necesidades, asegurando el mejor viaje posible.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección Contacto -->
+            <div class="tab-pane fade" id="contacto" role="tabpanel">
+                <h2>Contacto</h2>
+                <p>¿Tienes preguntas o necesitas soporte? Contáctanos en <strong>soporte@tellevo.com</strong>.</p>
+            </div>
+
+            <!-- Sección Descargar -->
+            <div class="tab-pane fade" id="descargar" role="tabpanel">
+                <div class="text-left">
+                    <h3 class="text-primary">Descargar TeLlevo</h3>
+                    <p>Haz clic en el botón para descargar la app directamente en tu dispositivo:</p>
+                    <a href="https://drive.google.com/drive/folders/1-FcvtRQTLabN2FnEnbxz1J4YhJcBGOZA?usp=sharing" class="btn btn-primary btn-download">Descargar TeLlevo</a>
+                    <p>Escanea el código QR para descargar la app:</p>
+                    <!-- Sección de QR dentro de Descargar -->
+                    <div id="qrcode" class="my-4"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QRCode.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <!-- Bootstrap JS (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Reemplaza esta URL con el enlace de tu archivo APK en Google Drive
+        const apkLink = 'https://drive.google.com/drive/folders/1-FcvtRQTLabN2FnEnbxz1J4YhJcBGOZA?usp=sharing';
+
+        // Generar el código QR
+        const qrCode = new QRCode(document.getElementById("qrcode"), {
+            text: apkLink,
+            width: 200,
+            height: 200
+        });
+    </script>
+</body>
+</html>

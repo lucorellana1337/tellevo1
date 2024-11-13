@@ -1,0 +1,88 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2e2c4;  /* Fondo cálido */
+    color: #333;
+    display: flex;
+    align-items: flex-start; /* Alineación superior */
+    justify-content: flex-start; /* Alineación izquierda */
+    min-height: 100vh;
+    text-align: left;
+    padding-top: 20px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(DUOC_UC_ALAMEDA.jpg);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+h1.display-4 {
+    color: #007bff;
+}
+
+p.lead {
+    color: #555;
+}
+
+.container {
+    max-width: 900px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Fondo blanco para la caja del contenido */
+}
+
+/* Pestañas de navegación */
+.nav-tabs .nav-link {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de descarga */
+.btn-download {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-download:hover {
+    background-color: #0056b3;
+}
+
+#qrcode {
+    margin: 20px auto; /* Centra horizontalmente */
+    border: 2px solid #333;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center; /* Centra contenido dentro de #qrcode si es necesario */
+    align-items: center;
+}
+/* Estilos de secciones */
+.tab-content h2 {
+    color: #007bff;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.text-left {
+    text-align: left;
+}
